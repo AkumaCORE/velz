@@ -20,7 +20,7 @@ using Mario_s_Lib;
         #endregion Sounds
 
         public static AIHeroClient Champion { get { return Player.Instance; } }
-        public static List<Vector2> Perpendicular;
+        //public static List<Vector2> Perpendicular;
         static int playerKills = 0;
         
         //private static MissileClient QMissile;
