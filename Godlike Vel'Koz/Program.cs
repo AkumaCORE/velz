@@ -70,22 +70,7 @@ namespace Godlike_Vel_Koz
             }
         }
         
-        private static void QSplitter(EventArgs args)
-        {
-            // Check if the missile is active
-            if (Handle != null && Core.GameTickCount - QTime <= 1000)
 
-            {
-           //     Chat.Print("Q detected");
-                Direction = (Handle.EndPosition.To2D() - Handle.StartPosition.To2D()).Normalized();
-                Perpendiculars.Add(Direction.Perpendicular());
-                Perpendiculars.Add(Direction.Perpendicular2());
-
-            }
-            else
-                Handle = null;
-        }
-        
 
                 
         public static void Drawing_OnDraw(EventArgs args)
