@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
 using EloBuddy;
 using EloBuddy.SDK;
 using EloBuddy.SDK.Events;
