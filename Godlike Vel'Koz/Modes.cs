@@ -43,7 +43,7 @@ namespace Godlike_Vel_Koz
             if (Manager.harrasQ)
             {
                 var target = Target.GetChampionTarget(Spells.Q.Range, DamageType.Magical, false, true);
-                if (target != null)
+                if (target != null && Player.Instance.Spellbook.GetSpell(SpellSlot.Q).ToggleState == 1)
                     Spells.CastQ(target);
             }
             if (Manager.harrasW)
@@ -135,7 +135,7 @@ namespace Godlike_Vel_Koz
             int skillRange = 0, skillDelay = 0, skillWidth = 0, skillSpeed = 0;
             if (spell == "W")
             {
-                skillRange = int.Parse(Spells.W.Range.ToString());
+                skillRange = int.Parse(Spells.W.Range.ToString());ca
                 skillDelay = Spells.W.CastDelay;
                 skillWidth = Spells.W.Width;
                 skillSpeed = Spells.W.Speed;
@@ -169,7 +169,7 @@ namespace Godlike_Vel_Koz
             if (Manager.killstealQ)
             {
                 var target = Target.GetChampionTarget(Spells.Q.Range, DamageType.Magical, false, true, Spells.QDamage());  
-                if (target != null)
+                if (target != null && Player.Instance.Spellbook.GetSpell(SpellSlot.Q).ToggleState == 1)
                     Spells.CastQ(target);
             }
             if (Manager.killstealW)
