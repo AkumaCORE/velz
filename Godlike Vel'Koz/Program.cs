@@ -50,7 +50,8 @@ namespace Godlike_Vel_Koz
             Game.OnTick += Game_OnTick;
             Interrupter.OnInterruptableSpell += Modes.InterruptMode;
             Gapcloser.OnGapcloser += Modes.GapCloserMode;
-            Game.OnUpdate += QSplitter;
+            //Game.OnUpdate += QSplitter;
+            GameObject.OnCreate += Obj_AI_Base_OnCreate;
             //Game.OnUpdate += QSplitter2;
         }
 
@@ -68,6 +69,21 @@ namespace Godlike_Vel_Koz
                     Core.DelayAction(() => playingOhDarn = false, 1000);
                     playerKills++;
                 }
+            }
+        }
+        
+        public static void Obj_AI_Base_OnCreate(GameObject sender, EventArgs args)
+        {
+            if (sender.IsAlly && sender != null && sender.Type != GameObjectType.obj_AI_Minion)
+            {
+                Perpendiculars = new List<Vector2>();
+                var missile = (MissileClient)sender;
+                if (missile.SData.Name != null && missile.SData.Name == "VelkozQMissile")
+                    {
+                    QMissile = missile;
+                    Handle = missile;
+                    QTime = Core.GameTickCount;
+                    }
             }
         }
         
