@@ -10,7 +10,7 @@ using SharpDX;
 using Godlike_Vel_Koz.Properties;
 using EloBuddy.SDK.Enumerations;
 namespace Godlike_Vel_Koz
-using Mario_s_Lib;
+
 {
     class Program
     {
