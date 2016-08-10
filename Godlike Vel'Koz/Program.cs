@@ -13,6 +13,7 @@ using EloBuddy.SDK.Constants;
 using System.IO;
 using System.Net;
 namespace Godlike_Vel_Koz
+using Mario_s_Lib;
 {
     class Program
     {
