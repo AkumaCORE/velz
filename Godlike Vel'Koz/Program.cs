@@ -20,7 +20,7 @@ namespace Godlike_Vel_Koz
 
         public static AIHeroClient Champion { get { return Player.Instance; } }
         static int playerKills = 0;
-        //private static List<Vector2> Perpendiculars { get; set; }
+        private static List<Vector2> Perpendiculars { get; set; }
         //private static MissileClient QMissile;
         //private static MissileClient Handle;
         //public static float QTime = 0;
