@@ -76,7 +76,7 @@ namespace Godlike_Vel_Koz
 	                Circle.Draw(SharpDX.Color.Yellow, 10, 60, endPos.To3D());
 	                 
         	     }
-        	     if (Perpendiculars == null) 
+        	     if (var perpendicular in Perpendiculars == null) 
         	     {
         	     	Chat.Print("Q detected");
         	     	
