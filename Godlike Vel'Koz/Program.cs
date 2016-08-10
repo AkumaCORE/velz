@@ -20,7 +20,7 @@ namespace Godlike_Vel_Koz
         #endregion Sounds
 
         public static AIHeroClient Champion { get { return Player.Instance; } }
-        private static List<Vector2> Perpendiculars { get; set; }
+        private static List<Vector2> Perpendiculars = new List<Vector2>(); 
         static int playerKills = 0;
         
         private static MissileClient QMissile;
