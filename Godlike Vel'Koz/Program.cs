@@ -126,7 +126,7 @@ namespace Godlike_Vel_Koz
 	                    	{
 	
 	
-	                           //SpellsManager.Q.Cast(Champion);
+	                            Spells.Q.Cast(Champion);
 	
 	                           
 	                        }
