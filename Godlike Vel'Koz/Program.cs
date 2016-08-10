@@ -9,6 +9,7 @@ using EloBuddy.SDK.Rendering;
 using SharpDX;
 using Godlike_Vel_Koz.Properties;
 using EloBuddy.SDK.Enumerations;
+using EloBuddy.SDK.Constants;
 namespace Godlike_Vel_Koz
 {
     class Program
