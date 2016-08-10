@@ -104,13 +104,14 @@ namespace Godlike_Vel_Koz
         
         private static void QSplitter2(EventArgs args)
         {
+		Chat.Print("enem1y");
 		if (Handle != null)
 		{
 	                foreach (var perpendicular in Perpendiculars)
 	                {
 	                    if (Handle != null)
 	                    {
-	                        Chat.Print("enem1y");
+	                        
 	                        var startPos = Handle.Position.To2D();
 	                        var endPos = Handle.Position.To2D() + 1100 * perpendicular;
 	
