@@ -50,7 +50,7 @@ namespace Godlike_Vel_Koz
             Game.OnTick += Game_OnTick;
             Interrupter.OnInterruptableSpell += Modes.InterruptMode;
             Gapcloser.OnGapcloser += Modes.GapCloserMode;
-            //Game.OnUpdate += QSplitter;
+            Game.OnUpdate += QSplitter;
             GameObject.OnCreate += Obj_AI_Base_OnCreate;
             //Game.OnUpdate += QSplitter2;
         }
