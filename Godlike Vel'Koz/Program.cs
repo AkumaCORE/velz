@@ -110,6 +110,7 @@ namespace Godlike_Vel_Koz
 	                {
 	                    if (Handle != null)
 	                    {
+	                        Chat.Print("enem1y");
 	                        var startPos = Handle.Position.To2D();
 	                        var endPos = Handle.Position.To2D() + 1100 * perpendicular;
 	
