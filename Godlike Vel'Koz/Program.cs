@@ -49,7 +49,7 @@ namespace Godlike_Vel_Koz
             Game.OnTick += Game_OnTick;
             Interrupter.OnInterruptableSpell += Modes.InterruptMode;
             Gapcloser.OnGapcloser += Modes.GapCloserMode;
-            //Game.OnUpdate += QSplitter;
+            Game.OnUpdate += QSplitter;
             //Game.OnUpdate += QSplitter2;
         }
 
@@ -68,6 +68,22 @@ namespace Godlike_Vel_Koz
                     playerKills++;
                 }
             }
+        }
+        
+        private static void QSplitter(EventArgs args)
+        {
+            // Check if the missile is active
+            if (Handle != null && Core.GameTickCount - QTime <= 1000)
+
+            {
+           //     Chat.Print("Q detected");
+                Direction = (Handle.EndPosition.To2D() - Handle.StartPosition.To2D()).Normalized();
+                Perpendiculars.Add(Direction.Perpendicular());
+                Perpendiculars.Add(Direction.Perpendicular2());
+
+            }
+            else
+                Handle = null;
         }
         
 
