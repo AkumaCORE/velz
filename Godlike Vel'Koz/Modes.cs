@@ -169,7 +169,7 @@ namespace Godlike_Vel_Koz
             if (Manager.killstealQ)
             {
                 var target = Target.GetChampionTarget(Spells.Q.Range, DamageType.Magical, false, true, Spells.QDamage());  
-                if (target != null && Player.Instance.Spellbook.GetSpell(SpellSlot.Q).ToggleState == 1)
+                if (target != null)
                     Spells.CastQ(target);
             }
             if (Manager.killstealW)
