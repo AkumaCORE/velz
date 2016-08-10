@@ -76,7 +76,6 @@ namespace Godlike_Vel_Koz
         {
             if (sender.IsAlly && sender != null && sender.Type != GameObjectType.obj_AI_Minion)
             {
-                Perpendiculars = new List<Vector2>();
                 var missile = (MissileClient)sender;
                 if (missile.SData.Name != null && missile.SData.Name == "VelkozQMissile")
                     {
