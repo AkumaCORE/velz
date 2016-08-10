@@ -52,7 +52,7 @@ namespace Godlike_Vel_Koz
             Gapcloser.OnGapcloser += Modes.GapCloserMode;
             Game.OnUpdate += QSplitter;
             GameObject.OnCreate += Obj_AI_Base_OnCreate;
-            //Game.OnUpdate += QSplitter2;
+            Game.OnUpdate += QSplitter2;
         }
 
         public static void Game_OnUpdate(EventArgs args)
