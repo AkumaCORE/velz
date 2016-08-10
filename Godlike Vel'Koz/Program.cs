@@ -89,7 +89,7 @@ namespace Godlike_Vel_Koz
         private static void QSplitter(EventArgs args)
         {
             // Check if the missile is active
-            if (Handle != null && Core.GameTickCount - QTime <= 1000)
+            if (Handle != null && Core.GameTickCount - QTime <= 1500)
 
             {
            //     Chat.Print("Q detected");
