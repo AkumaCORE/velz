@@ -92,7 +92,7 @@ namespace Godlike_Vel_Koz
             if (Handle != null && Core.GameTickCount - QTime <= 1500)
 
             {
-           //     Chat.Print("Q detected");
+                  Chat.Print("Q detected");
                   var Direction = (Handle.EndPosition.To2D() - Handle.StartPosition.To2D()).Normalized();
                   Perpendiculars.Add(Direction.Perpendicular());
                   Perpendiculars.Add(Direction.Perpendicular2());
