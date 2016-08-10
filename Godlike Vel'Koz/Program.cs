@@ -21,7 +21,7 @@ namespace Godlike_Vel_Koz
         #endregion Sounds
 
         public static AIHeroClient Champion { get { return Player.Instance; } }
-        public static List<Vector2> Perpendiculars { get; set; }
+        private static List<Vector2> Perpendiculars { get; set; }
         static int playerKills = 0;
         
         private static MissileClient QMissile;
@@ -61,14 +61,14 @@ namespace Godlike_Vel_Koz
 
              //var CurrentTarget = TargetSelector.GetTarget(1500, DamageType.Magical);
 	    // var enemydirection = CurrentTarget.ServerPosition;
-	     var startPos = Handle.Position.To2D();
+	            var startPos = Handle.Position.To2D();
          //    var intertwoD = intersection.To2D();
 
 
                    
 		  //   Circle.Draw(SharpDX.Color.White, 10, 50, intertwoD.To3D());
 	            // Circle.Draw(SharpDX.Color.Blue, 100, 100, enemydirection);
-	            Circle.Draw(SharpDX.Color.Red, 10, 50, startPos.To3D());
+	             Circle.Draw(SharpDX.Color.Red, 10, 50, startPos.To3D());
 	             foreach (var perpendicular in Perpendiculars)
 	             {
 	                
@@ -76,13 +76,8 @@ namespace Godlike_Vel_Koz
 	                Circle.Draw(SharpDX.Color.Yellow, 10, 60, endPos.To3D());
 	                 
         	     }
-        	     if (var perpendicular in Perpendiculars == null) 
-        	     {
-        	     	Chat.Print("Q detected");
-        	     	
-        	     }
         	     
-        	     }
+
                
              
 	}
