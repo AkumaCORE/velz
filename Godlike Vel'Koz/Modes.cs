@@ -14,7 +14,7 @@ namespace Godlike_Vel_Koz
             if (Manager.comboQ)
             {
                 var target = Target.GetChampionTarget(Spells.Q.Range, DamageType.Magical, false, true);
-                if (target != null)
+                if (target != null && Player.Instance.Spellbook.GetSpell(SpellSlot.Q).ToggleState == 1 )
                     Spells.CastQ(target);
             }
             if (Manager.comboE)
