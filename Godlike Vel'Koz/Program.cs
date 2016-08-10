@@ -121,8 +121,8 @@ namespace Godlike_Vel_Koz
             {
                  // Chat.Print("Q detected");
                   var Direction = (Handle.EndPosition.To2D() - Handle.StartPosition.To2D()).Normalized();
-                  Perpendiculars.Add(Direction.Perpendicular());
-                  Perpendiculars.Add(Direction.Perpendicular2());
+                  Perpendiculars.Add(Direction.To2D().Perpendicular());
+                  Perpendiculars.Add(Direction.To2D().Perpendicular2());
 
             }
             else
