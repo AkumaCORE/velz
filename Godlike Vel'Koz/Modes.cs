@@ -14,7 +14,7 @@ namespace Godlike_Vel_Koz
             if (Manager.comboQ)
             {
                 var target = Target.GetChampionTarget(Spells.Q.Range, DamageType.Magical, false, true);
-                if (target != null && Player.Instance.Spellbook.GetSpell(SpellSlot.Q).ToggleState == 1 )
+                if (target != null && Player.Instance.Spellbook.GetSpell(SpellSlot.Q).ToggleState == 0 )
                     Spells.CastQ(target);
             }
             if (Manager.comboE)
@@ -43,7 +43,7 @@ namespace Godlike_Vel_Koz
             if (Manager.harrasQ)
             {
                 var target = Target.GetChampionTarget(Spells.Q.Range, DamageType.Magical, false, true);
-                if (target != null && Player.Instance.Spellbook.GetSpell(SpellSlot.Q).ToggleState == 1)
+                if (target != null && Player.Instance.Spellbook.GetSpell(SpellSlot.Q).ToggleState == 0)
                     Spells.CastQ(target);
             }
             if (Manager.harrasW)
