@@ -53,7 +53,31 @@ namespace Godlike_Vel_Koz
             Game.OnUpdate += QSplitter;
             GameObject.OnCreate += Obj_AI_Base_OnCreate;
             Game.OnUpdate += QSplitter2;
+            Drawing.OnDraw += OnDraw3;
         }
+        
+        private static void OnDraw3(EventArgs args)
+        {
+
+             //var CurrentTarget = TargetSelector.GetTarget(1500, DamageType.Magical);
+	    // var enemydirection = CurrentTarget.ServerPosition;
+	  //   var startPos = Handle.Position.To2D();
+         //    var intertwoD = intersection.To2D();
+
+
+                   
+		  //   Circle.Draw(SharpDX.Color.White, 10, 50, intertwoD.To3D());
+	            // Circle.Draw(SharpDX.Color.Blue, 100, 100, enemydirection);
+	         //    Circle.Draw(SharpDX.Color.Red, 10, 50, startPos.To3D());
+	             foreach (var perpendicular in Perpendiculars)
+	             {
+	                var endPos = Handle.Position.To2D() + 1000 * perpendicular;
+	                Circle.Draw(SharpDX.Color.Yellow, 10, 60, endPos.To3D());
+	                 
+        	     }
+               
+             
+	}
 
         public static void Game_OnUpdate(EventArgs args)
         {
